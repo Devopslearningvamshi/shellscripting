@@ -1,4 +1,1 @@
-ls
-ls -lrt
-
-dnf instal notepad++
+echo hello world
