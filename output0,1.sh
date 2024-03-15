@@ -1,6 +1,6 @@
 echo installing node
  dnf module disable nodejs -y 
- dnf module enable nodejs:20 -y
+ dnf module enable nodejs:20 -y >>/tmp/expense.log
 echo $?
 
 echo disablling node
