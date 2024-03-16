@@ -7,7 +7,7 @@ Apps_installing(){
 
 }
 Apps_installing "installing node"
- dnf module disable nodejs -y
+ dnf module disable nodejs -y &>>/tmp/expense.log
  dnf module enable nodejs:20 -y &>>/tmp/expense.log
 echo $?
 
