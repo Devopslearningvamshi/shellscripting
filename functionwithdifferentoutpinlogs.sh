@@ -2,7 +2,7 @@
 
 Apps_installing(){
   echo $1
-  echo "@@@@@@@@@@@@@ 1 @@@@@@@@@" &>>/tmp/expense.log
+  echo "@@@@@@@@@@@@@ $1 @@@@@@@@@" &>>/tmp/expense.log
 
 
 }
