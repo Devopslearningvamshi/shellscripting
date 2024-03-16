@@ -1,9 +1,9 @@
 # check in the log how the output shown
 
 Apps_installing(){
-
+  echo $1
   echo "@@@@@@@@@@@@@ 1 @@@@@@@@@" &>>/tmp/expense.log
-  echo "$1"
+
 
 }
 Apps_installing "installing node"
@@ -48,7 +48,7 @@ Apps_installing "app"
  npm install &>>/tmp/expense.log
 echo $?
 
- Apps_installing "reloading"
+Apps_installing "reloading"
   systemctl daemon-reload&>>/tmp/expense.log
 echo $?
 
