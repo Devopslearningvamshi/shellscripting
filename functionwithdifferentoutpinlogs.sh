@@ -6,7 +6,10 @@ Apps_installing(){
 
 
 }
-Apps_installing "installing node"
+#other than the letter and number use the double course in the inculding the space also   
+#Note $1 value is the  heading of the u r app (installaing node) #
+
+Apps_installing "installing node"  # app_installing is function and calling the everyapp
  dnf module disable nodejs -y &>>/tmp/expense.log
  dnf module enable nodejs:20 -y &>>/tmp/expense.log
 echo $?
